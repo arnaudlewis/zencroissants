@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Montserrat:400,700);
+body {
+  background-color: #FBFBFB;
+  overflow-x: hidden;
+  color: #4e4e4e;
+  font-size: 0;
+  height: 100vh; }
+  body.frozen {
+    overflow: hidden; }
+  body * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  body > .container {
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    min-height: calc(100% - 5rem);
+    vertical-align: top;
+    overflow: auto;
+    background-color: #FFFFFF; }
+    body > .container .block-content {
+      padding: 2rem; }
+    body > .container h1, body > .container h2, body > .container h3 {
+      color: #2b2b2b;
+      font-family: 'Montserrat'; }
+    body > .container h1 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      text-align: center; }
+    body > .container h2 {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 2rem; }
+    body > .container h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 1.3rem; }
+    body > .container form {
+      max-width: 40rem;
+      width: 100%;
+      margin: auto; }
+    body > .container label {
+      font-family: 'montserrat';
+      margin: 2rem 0 1rem 0;
+      display: block;
+      border-bottom: 1px solid #279283;
+      padding-bottom: 10px;
+      padding-left: 1rem; }
+    body > .container .react-datepicker__input-container {
+      width: 100%; }
+    body > .container input:not([type="submit"]), body > .container input:not([type="button"]) {
+      height: 3rem;
+      width: 100%;
+      display: block;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid gainsboro;
+      font-size: 13px; }
+      body > .container input:not([type="submit"]):focus, body > .container input:not([type="button"]):focus {
+        outline: none; }
+    body > .container input[type="button"] {
+      color: #279283;
+      border: 1px solid #279283;
+      padding: 0.5rem 1.4rem;
+      height: auto;
+      width: auto;
+      background-color: white;
+      margin: 1rem 0;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'lato'; }
+      body > .container input[type="button"].delete {
+        color: #D42B2B;
+        border-color: #D42B2B; }
+    body > .container input[type="submit"] {
+      height: 3rem;
+      width: 100%;
+      max-width: 20rem;
+      display: block;
+      margin: 2rem auto 1rem auto;
+      padding: 1rem;
+      border: 1px solid #1E8878;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: 'lato';
+      color: white;
+      background: #279283;
+      font-weight: bold;
+      cursor: pointer; }
+      body > .container input[type="submit"]:disabled {
+        background-color: #BABABA;
+        cursor: initial; }
+      body > .container input[type="submit"]:hover {
+        background-color: #1E8878; }
+      body > .container input[type="submit"]:focus {
+        outline: none; }
+    body > .container a {
+      color: #4e4e4e;
+      text-decoration: none; }
+      body > .container a:hover {
+        color: #4e4e4e;
+        text-decoration: none; }
+      body > .container a.btn-redirect {
+        font-size: 0.8rem;
+        padding: 0.3rem 1rem;
+        height: auto;
+        width: auto;
+        background-color: white;
+        margin: 1rem 0;
+        cursor: pointer;
+        text-transform: lowercase;
+        font-family: 'lato'; }
+        body > .container a.btn-redirect.edit {
+          color: #279283;
+          border: 1px solid #279283; }
+        body > .container a.btn-redirect.delete {
+          color: #D42B2B;
+          border: 1px solid #D42B2B; }
+
+.address-editor {
+  margin: 1rem 0;
+  /**
+   * A geosuggest item
+   */ }
+  .address-editor .completed-addresses .address {
+    border-right: 1px solid gainsboro;
+    width: calc(50% - 0.5rem);
+    display: inline-block;
+    padding: 1rem;
+    line-height: 1.3rem;
+    margin: 0 1rem 1rem 0; }
+    .address-editor .completed-addresses .address:nth-child(2n) {
+      margin-right: 0; }
+  .address-editor .completed-addresses input[type="button"] {
+    float: right; }
+  .address-editor .geosuggest-with-feedback {
+    width: 100%;
+    margin-bottom: 1.5rem; }
+    .address-editor .geosuggest-with-feedback .geosuggest-feedback {
+      color: #C30202;
+      width: 100%;
+      text-align: center;
+      height: 1rem; }
+    .address-editor .geosuggest-with-feedback .geosuggest {
+      font-size: 18px;
+      font-size: 1rem;
+      position: relative;
+      margin: 1em auto;
+      text-align: left; }
+    .address-editor .geosuggest-with-feedback .geosuggest__input {
+      margin: 0;
+      width: 100%;
+      border: 2px solid transparent;
+      box-shadow: 0 0 1px #3d464d;
+      padding: .5em 1em;
+      -webkit-transition: border 0.2s, box-shadow 0.2s;
+        -webkit-transition-transition: border 0.2s, box-shadow 0.2s; }
+    .address-editor .geosuggest-with-feedback .geosuggest__input:focus {
+      border-color: #279283;
+      box-shadow: 0 0 0 transparent; }
+  .address-editor .geosuggest__suggests {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 25em;
+    padding: 0;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #279283;
+    border-top-width: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    z-index: 5;
+    -webkit-transition: max-height 0.2s, border 0.2s;
+      -webkit-transition-transition: max-height 0.2s, border 0.2s; }
+  .address-editor .geosuggest__suggests--hidden {
+    max-height: 0;
+    overflow: hidden;
+    border-width: 0; }
+  .address-editor .geosuggest-item {
+    font-size: 18px;
+    font-size: 1rem;
+    padding: .5em .65em;
+    cursor: pointer; }
+  .address-editor .geosuggest-item:hover,
+  .address-editor .geosuggest-item:focus {
+    background: #f5f5f5; }
+  .address-editor .geosuggest-item--active {
+    background: #279283;
+    color: #fff; }
+  .address-editor .geosuggest-item--active:hover,
+  .address-editor .geosuggest-item--active:focus {
+    background: #ccc; }
+
+.global-errors {
+  background-color: #FFEAEA;
+  border-radius: 0.2rem;
+  font-family: 'lato';
+  font-size: 0.8rem;
+  border: 1px solid #D42B2B;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  display: none; }
+  .global-errors.active {
+    display: block; }
+  .global-errors p {
+    color: #D42B2B;
+    padding: 0.2rem 0; }
+
+#profile .profile-picture {
+  width: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 50%; }
+
+.triplist .trip {
+  height: auto;
+  border-bottom: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  padding: 2rem;
+  min-width: 20rem;
+  display: inline-block;
+  font-family: Lato; }
+  .triplist .trip .directions {
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center; }
+  .triplist .trip .driver {
+    color: #4e4e4e;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize; }
+  .triplist .trip .price {
+    color: #279283;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1rem 0 2rem 0; }
+    .triplist .trip .price:after {
+      content: ' €'; }
+  .triplist .trip .infos {
+    display: flex; }
+    .triplist .trip .infos span:first-child {
+      font-style: italic;
+      flex: 1; }
+    .triplist .trip .infos span:nth-child(2) {
+      font-weight: bold;
+      font-size: 20px; }
+      .triplist .trip .infos span:nth-child(2):after {
+        content: ' seats'; }

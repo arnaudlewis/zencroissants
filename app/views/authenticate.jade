@@ -1,0 +1,21 @@
+extends ./layout
+
+block body
+  .block-content
+    h1 Authentication
+
+    form(method='POST', action="#{Router.signup}")
+      input(type='email', placeholder='email', name='email' value="#{signup_email || ''}")
+      input(type='password', placeholder='password', name='password')
+      input(type='text', placeholder='first name', name='firstname' value="#{signup_firstname || ''}")
+      input(type='text', placeholder='last name', name='lastname' value="#{signup_lastname || ''}")
+      input(type='submit', value='Signup')
+
+    p !{signup_error}
+
+    form(method='POST', action="#{Router.signin}")
+      input(type='email', placeholder='email', name='email' value="#{signin_email || ''}")
+      input(type='password', placeholder='password', name='password')
+      input(type='submit', value='Signin')
+
+    p !{signin_error}

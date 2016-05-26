@@ -1,0 +1,25 @@
+doctype html(lang='en')
+
+head
+    title Green Something
+    link(rel="stylesheet", href="/vendors/virtuoso/dist/virtuoso.min.css")
+    link(rel="stylesheet", href="/vendors/react-datepicker/react-datepicker.min.css")
+    link(rel="stylesheet", href="/stylesheets/virtuoso_override.css")
+    link(rel="stylesheet", href="/stylesheets/compiled/greensomething.css")
+    link(href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900", rel="stylesheet", type="text/css")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDWr4jERjc7X_breMZdL4RKr7mrQJ37eSc&libraries=places')
+    script(src="/vendors/virtuoso/dist/virtuoso.min.js")
+    script(src="/javascripts/compiled/greensomething.js")
+    script(src="/vendors/react-datepicker/react-datepicker.min.js")
+
+    script.
+      window.Router = !{JSON.stringify(Router)}
+
+body
+  include ./menu
+
+  .container
+    block body
+

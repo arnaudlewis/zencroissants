@@ -1,0 +1,49 @@
+@import ../utils/colors
+
+.triplist
+  .trip
+    height: auto
+    border-bottom: 1px solid $light-grey
+    border-right: 1px solid $light-grey
+    padding: 2rem
+    min-width: 20rem
+    display: inline-block
+    font-family: Lato
+
+    .directions
+      text-transform: UPPERCASE
+      font-weight: bold
+      font-size: 24px
+      margin-bottom: 1rem
+      text-align: center
+
+    .driver
+      color: $grey
+      font-size: 20px
+      text-align: left
+      text-transform: capitalize
+
+    .price
+      color: $green
+      text-align: right
+      font-size: 30px
+      font-weight: bold
+      margin: 1rem 0 2rem 0
+
+      &:after
+        content: ' €'
+
+
+    .infos
+      display: flex
+
+      span:first-child
+        font-style: italic
+        flex: 1
+
+      span:nth-child(2)
+        font-weight: bold
+        font-size: 20px
+
+        &:after
+          content: ' seats'

@@ -1,0 +1,572 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prismic Design demo page</title>
+	<link rel="stylesheet" type="text/css" href="dist/virtuoso.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="dist/virtuoso.js"></script>
+</head>
+
+<style>
+
+	body {
+		background-color: #162C4B;
+	}
+	.content {
+		background-color: white;
+	}
+</style>
+<body>
+
+<div class="fixed-menu">
+  <div class="fixed-menu-container">
+    <h1>Mon menu</h1>
+    <nav>
+      <a href="#">Element 1</a>
+      <a href="#">Element 2</a>
+      <a href="#">Element 3</a>
+      <a href="#">Element 4</a>
+    </nav>
+  </div>
+</div>
+
+<div class="photo-gallery">
+	<div class="wrapper wrapper-2x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>
+		<div class="wrapper wrapper-1x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" data-image-url="https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>	<div class="wrapper wrapper-1x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>	<div class="wrapper wrapper-2x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>	<div class="wrapper wrapper-2x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>	<div class="wrapper wrapper-2x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>	<div class="wrapper wrapper-2x1"> 
+		<div class="action-pane">
+			<span class="show-action"><i class="icon-eye"></i></span>
+		</div>
+		<div class="inner" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')">
+		</div>
+	</div>
+</div>
+
+		<<!-- div class="photo-gallery">
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+			<div class="img-container" style="background-image:url('https://prismic-io.s3.amazonaws.com/supercafe/1e8f8cade9fa7e6237e8b11b411aa62f875e5ccd_cafefamille.jpg')"></div>
+		</div> -->
+
+	<div class="content offset-1-md offset-1-lg offset-1-xl col-16-xl col-10-lg col-10-md col-12-sm-ls col-8-sm-pt centered">
+
+<!-- 		<div class="tab-menu">
+			<ul class="tabs">
+				<li class="tab active"><p class="text-wrapper">Tab1</p></li>
+				<li class="tab"><p class="text-wrapper">Tab2</p></li>
+			</ul>
+
+			<div class="tabs-content">
+				<div class="tab-content active">Contenu 1</div>
+				<div class="tab-content">Contenu 2</div>
+			</div>
+
+		</div> -->
+
+
+
+		<button type="button"  href="#nav-right" class="right-top-corner  navbar-switcher menu-burger" style="color:white"></button>
+		<div id="nav-right" class="navbar navbar-right navbar-collapse navbar-light">
+			<div class="navbar-container">
+				<input type="search" placeholder="Search" />
+				<div class="navbar-section">
+					<h3>Home</h3>
+				</div>
+				<div class="navbar-section">
+					<h3>Archives</h3>
+					<ul>
+						<li><a href"#">Mai 2015</a></li>
+						<li><a href"#">Juin 2015</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="slider slider-dark small">
+			<div class="slide" data-image="https://prismic-io.s3.amazonaws.com/blogtemplate/ff6d898c82d1cde79630bc480b0d58ba4fe4c031_home-header-small.png">
+				<a href="#" class="arrow-prev"><i class="icon-arrow-prev"></i></a>
+				<div class="slide-container">
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining <b>Content Slices</b> in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+				<a href="#" class="arrow-next"><i class="icon-arrow-next"></i></a>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="slider slider-dark medium">
+			<div class="slide" data-image="https://prismic-io.s3.amazonaws.com/blogtemplate/ff6d898c82d1cde79630bc480b0d58ba4fe4c031_home-header-small.png">
+				<a href="#" class="arrow-prev"><i class="icon-arrow-prev"></i></a>
+				<div class="slide-container">
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining <b>Content Slices</b> in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+				<a href="#" class="arrow-next"><i class="icon-arrow-next"></i></a>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="slider slider-dark">
+			<div class="slide" data-image="https://prismic-io.s3.amazonaws.com/blogtemplate/ff6d898c82d1cde79630bc480b0d58ba4fe4c031_home-header-small.png">
+				<a href="#" class="arrow-prev"><i class="icon-arrow-prev"></i></a>
+				<div class="slide-container">
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining Content Slices in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+				<a href="#" class="arrow-next"><i class="icon-arrow-next"></i></a>
+			</div>
+			<div class="slide" data-image="https://prismic-io.s3.amazonaws.com/blogtemplate/ff6d898c82d1cde79630bc480b0d58ba4fe4c031_home-header-small.png">
+				<a href="#" class="arrow-prev"><i class="icon-arrow-prev"></i></a>
+				<div class="slide-container">
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap wekozd ozd )zd)zd )zdbsites by
+						<br />
+						combining Content Slices in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+				<a href="#" class="arrow-next"><i class="icon-arrow-next"></i></a>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- if you wanna autoplay the video and loop, insert this in video html tag ==> autoplay id="movie" loop=1 -->
+		<!-- <div class="video-banner video-banner-dark small">
+			<div class="video">
+				<video width="100%" muted autoplay loop=1 preload="none" poster="http://exemple.fr/poster.jpg" src="https://prismic-io.s3.amazonaws.com/alw12345%2F98eca57d-a173-4285-bf65-0aef2ee7c9c5_scenery+of+japanpaysage+du+japon.mp4" onclick="this.play();"> 
+				</video>
+				<div class="video-container">
+					<span class="play"></span>
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining Content Slices in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="video-banner video-banner-dark medium">
+			<div class="video">
+				<video width="100%" muted autoplay loop=1 preload="none" poster="http://exemple.fr/poster.jpg" src="https://prismic-io.s3.amazonaws.com/alw12345%2F98eca57d-a173-4285-bf65-0aef2ee7c9c5_scenery+of+japanpaysage+du+japon.mp4" onclick="this.play();"> 
+
+				</video>
+				<div class="video-container">
+					<span class="play"></span>
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining Content Slices in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="video-banner video-banner-dark">
+			<div class="video">
+				<video width="100%" muted autoplay loop=1 preload="none" poster="http://exemple.fr/poster.jpg" src="https://prismic-io.s3.amazonaws.com/alw12345%2F98eca57d-a173-4285-bf65-0aef2ee7c9c5_scenery+of+japanpaysage+du+japon.mp4" onclick="this.play();"> 
+				</video>
+				<div class="video-container">
+					<span class="play"></span>
+					<div class="title">
+						Website Starter
+						<br />
+						powered by prismic.io
+					</div>
+					<p>
+						Bootstrap websites by
+						<br />
+						combining Content Slices in a fluid layout
+						<br />
+						backed by a groundbreaking CMS
+					</p>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="featured-items">
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 offset-1-lg centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="featured-items">
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+
+			<div class="item col-8-sm-pt col-6-sm-ls col-4 centered">
+				<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+				<div class="text-wrapper">
+					<h3>User-friendly visual editor for editing rich content</h3> 
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+					<a class="read-more-button" href="http://prismic.io">
+						Explore
+					</a>
+				</div>
+			</div>
+
+			<div class="empty"></div>
+		</div>
+
+
+		<div class="alternated-highlights">
+			<div class="item alternate">
+				<div class="text-wrapper">
+					<div class="head-text">
+						<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+						<h3>User-friendly visual editor for editing rich content</h3> 
+					</div>
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+				</div>
+				<div class="image-container centered">
+					<img src="https://prismic-io.s3.amazonaws.com/alw12345/medium_75364583-42a2-47f2-b0dd-16aa33e79365_new-york-city-times-square.jpg" />
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="image-container centered">
+					<img src="https://prismic-io.s3.amazonaws.com/alw12345/medium_75364583-42a2-47f2-b0dd-16aa33e79365_new-york-city-times-square.jpg" />
+				</div>
+
+				<div class="text-wrapper">
+					<div class="head-text">
+						<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+						<h3>User-friendly visual editor for editing rich content</h3> 
+					</div>
+					<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section-header section-header-centered">
+			<div class="text-wrapper">
+				<h2>Frequently Asked Questions</h2> 
+				<p>You've got Q's, We've got A's</p>
+			</div>
+		</div>
+
+		<div class="centered-highlight">
+		<div class="underlay"></div>
+			<div class="thumbnail" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/a5ed4c5cce756794de16a11cdc3fef01e0ecd4b4_artboard-18.png)"></div>
+			<div class="text-wrapper">
+				<h3>User-friendly visual editor for editing rich content</h3> 
+				<p>The visual rich editor allows you to create and modify documents with various fragment types. Write rich texts, upload, resize and crop images, pin geo-location points and pick colors and dates.</p>
+			</div>
+			<img src="https://prismic-io.s3.amazonaws.com/alw12345/medium_75364583-42a2-47f2-b0dd-16aa33e79365_new-york-city-times-square.jpg"/>
+		</div>
+
+		<div class="illustration content-width">
+			<div class="image" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/34fbfd141de79a3f8518dc29e070c5a67c79c57f_prismicio.png)"></div>
+		</div>
+
+		<div class="illustration">
+			<div class="image" style="background-image: url(https://prismic-io.s3.amazonaws.com/alw12345/34fbfd141de79a3f8518dc29e070c5a67c79c57f_prismicio.png)"></div>
+		</div>
+
+		<div class="accordions">
+			<div class="item">
+				<label>
+					<input type="checkbox" />
+					<span>It is compatible with my Project ?</span>
+					<i class="accordion-arrow"></i>
+				</label>
+				<div class="summary">
+					<div>Hello World!</div>
+					<ul>
+						<li>test</li>
+						<li>test</li>
+						<li>test</li>
+						<li>test</li>
+						<li>test</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label>
+					<input type="checkbox" />
+					<span>How is this a different approach to content Management ?</span>
+					<i class="accordion-arrow"></i>
+				</label>
+				<div class="summary">
+					<p>Is it really different because of its API who let developer manage all the client side and juste bind the data from prismic API. It is really easy and fully managed by RESTful webservices.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-header">
+			<div class="text-wrapper">
+				<h2>Frequently Asked Questions</h2> 
+				<p>You've got Q's, We've got A's</p>
+				<div> <!-- allow button to adapt width to its content --> 
+					<a class="button" href="https://lesbonneschoses.prismic.io/api">
+						Explore an example API
+					</a>
+				</div>
+			</div>
+			<div class="image-container centered">
+				<img src="https://prismic-io.s3.amazonaws.com/alw12345/0b7d9cc9b2c0f3e46c9f1307fd6c567a84796a08_image_header_prismicio.png">
+			</div>
+		</div>
+
+		<div class="paragraph">
+			<div class="container col-8-sm-pt col-12">
+				<h3>Title of the paragraph</h3>
+				<p>
+				This paragraph can contain a lot of different Data including text or medias. It is mostly dedicate to create a paragraph in blog post or things like that.
+				It's also the perfect Slice to render a structuredText if it's use with Prismic.io
+				</p>
+			</div>
+
+			<div class="container col-8-sm-pt col-6">
+				<h3>Title of the paragraph</h3>
+				<p>
+					This paragraph can contain a lot of different Data including text or medias. It is mostly dedicate to create a paragraph in blog post or things like that.
+					It's also the perfect Slice to render a structuredText if it's use with Prismic.io
+				</p>
+			</div>
+
+			<div class="container col-8-sm-pt col-6">
+				<h3>Title of the paragraph</h3>
+				<p>
+					This paragraph can contain a lot of different Data including text or medias. It is mostly dedicate to create a paragraph in blog post or things like that.
+					It's also the perfect Slice to render a structuredText if it's use with Prismic.io
+				</p>
+			</div>
+		</div>
+
+
+		<div class="source-code">
+			<div class="text-wrapper">
+				<h3>
+					This is a new slice to render source code!
+				</h3>
+				<p>
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'. 
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'
+					There is a pb to render html, you have to replace the '<' character by his escape translation which is '& l t ;'
+				<p>
+			</div>
+			<pre>
+				<code>
+use Prismic\LinkResolver;
+/**
+ * The link resolver is the code building URLs for pages corresponding to
+ * a Prismic document.
+ *
+ * If you want to change the URLs of your site, you need to update this class
+ * as well as the routes in app.php.
+ */
+class StarterKitLinkResolver extends LinkResolver
+{
+    private $prismic;
+    public function __construct($prismic)
+    {
+        $this->prismic = $prismic;
+    }
+    public function resolve($link)
+    {
+        if($link instanceof Prismic\Fragment\Link\DocumentLink) {
+            foreach ($this->prismic->get_api()->bookmarks() as $name => $id) {
+                if ($link->getId() == $id && ($name == 'home' || $name == 'skin')) {
+                    return '/';
+                }
+                if ($link->getId() == $id && $name == 'bloghome') {
+                    return '/blog';
+                }
+            }
+            if ($link->isBroken()) {
+                return;
+            }
+            if ($link->getType() == 'contact') {
+                return '/contact';
+            }
+            if ($link->getType() == 'author') {
+                return '/author/'.$link->getId().'/'.$link->getSlug();
+            }
+            if ($link->getType() == 'category') {
+                return '/category/'.$link->getUid();
+            }
+            if ($link->getType() == 'post') {
+                $date = $link->getDate('post.date');
+                $year = $date ? $date->asDateTime()->format('Y') : '0';
+                $month = $date ? $date->asDateTime()->format('m') : '0';
+                $day = $date ? $date->asDateTime()->format('d') : '0';
+                return '/blog/'.$year.'/'.$month.'/'.$day.'/'.urlencode($link->getUid());
+            }
+            if ($link->getType() == 'page') {
+                $homeId = $this->prismic->get_api()->bookmark('home');
+                if ($link->getId() == $homeId) {
+                    return '/';
+                } else {
+                    $pieces = $this->prismic->page_path($link->getUid());
+                    $pieces_encoded = array_map(function ($p) {
+                        return urlencode($p);
+                    }, $pieces);
+                    return '/'.implode('/', $pieces_encoded);
+                }
+            }
+            // This is a generic route for user-created document masks.
+            // To have nicer looking URLs, it is recommended to add a specific rule for any mask you create.
+            return '/document/' . $link->getId() . '/' . $link->getSlug();
+        } else {
+            return $link->getUrl();
+        }
+    }
+}
+			</code>
+		</pre>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+extends ./layout
+block body
+  h1 Travel
+  .block-content
+    #trip-form
+      script.
+        console.log(ReactDOM)
+        ReactDOM.render(
+          React.createElement(UI.TripForm), document.getElementById('trip-form')
+        )

@@ -1,0 +1,20 @@
+extends ./layout
+block body
+  .triplist
+    div.block-content
+      h1  Trip List
+
+    div.block-content
+      each trip in results
+        a(href="/trips/#{trip._id}")
+          div.trip
+            div.directions
+              span= trip.departure + ' - ' + trip.arrival
+            div.driver
+              span= trip.driver.firstname + ' ' + trip.driver.lastname
+            div.price= trip.price
+            div.infos
+              span= trip.date.substr(0, 10)
+              span= trip.nPlace
+
+

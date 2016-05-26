@@ -1,0 +1,35 @@
+extends ./layout
+
+block body
+
+  #profile
+    h1 !{ctx.firstname + ' ' + ctx.lastname + ' - ' + ctx.email}
+
+    img(class="profile-picture" src="/images/empty_profile.png")
+
+    div.triplist
+      h2 Booked
+      div.block-content
+        each trip in booked
+          div.trip
+            div.directions
+              span= trip.departure + ' - ' + trip.arrival
+            div.driver
+              span= trip.driver.firstname + ' ' + trip.driver.lastname
+            div.price= trip.price
+            div.infos
+              span= trip.date.substr(0, 10)
+              span= trip.nPlace
+
+      h2 Proposed
+      div.block-content
+        each trip in proposed
+          div.trip
+            div.directions
+              span= trip.departure + ' - ' + trip.arrival
+            div.driver
+              span= trip.driver.firstname + ' ' + trip.driver.lastname
+            div.price= trip.price
+            div.infos
+              span= trip.date.substr(0, 10)
+              span= trip.nPlace
